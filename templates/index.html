@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>研究室登録フォーム</title>
+</head>
+<body>
+    <form action="/" method="POST">
+        <label for="display_name">LINE NAME</label>
+        <input type="text" name="display_name" value= "{{ post.display_name }}" readonly required>
+        <label for="display_name">ID</label>
+        <input type="text" name="id" value="{{ post.user_id }}" readonly required>
+        <label for="name">氏名</label>
+        <input type="text" name="name" required>
+        <label for="teacher">指導教員</label>
+        <input type="text" name="teacher" required>
+        <input type="submit" value="登録">
+
+    </form>
+</body>
+</html>
